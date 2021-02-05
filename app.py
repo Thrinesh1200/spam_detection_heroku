@@ -13,7 +13,7 @@ import nltk
 # load the model from disk
 filename = 'spam.pkl'
 model = pickle.load(open(filename, 'rb'))
-app = Flask(__name__,template_folder='templates')
+app = Flask(__name__,template_folder='templates',static_folder='static')
 
 @app.route('/')
 def home():

@@ -19,7 +19,7 @@ filename = 'spam.pkl'
 model = pickle.load(open(filename, 'rb'))
 app = Flask(__name__,template_folder='templates')
 
-@app.route('/',methods=['GET'])
+@app.route('/')
 def home():
 	return render_template('home.html')
 

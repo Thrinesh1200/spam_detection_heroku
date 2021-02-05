@@ -7,16 +7,18 @@ import pickle
 import nltk
 import string
 from nltk.corpus import stopwords
-def cleaning(msg):
-    no_punc=[c for c in msg if c not in string.punctuation]
-    no_punc=''.join(no_punc)
-    return[word for word in no_punc.split() if word.lower() not in stopwords.words('english')]
 
 
 # load the model from disk
 filename = 'spam.pkl'
 model = pickle.load(open(filename, 'rb'))
 app = Flask(__name__,template_folder='templates')
+def cleaning(msg):
+    no_punc=[c for c in msg if c not in string.punctuation]
+    no_punc=''.join(no_punc)
+    return[word for word in no_punc.split() if word.lower() not in stopwords.words('english')]
+
+
 
 @app.route('/')
 def home():

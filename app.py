@@ -6,7 +6,6 @@ from sklearn.naive_bayes import MultinomialNB
 import pickle
 import nltk
 import string
-nltk.download('stopwords')
 from nltk.corpus import stopwords
 def cleaning(msg):
     no_punc=[c for c in msg if c not in string.punctuation]

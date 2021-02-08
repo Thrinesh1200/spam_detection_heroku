@@ -66,9 +66,9 @@ ____
 For training the model we can use any sort of algorithms.I used Naive Bayes classifier.
 
 ## Deployemnt on Heroku
-*Create a Heroku account
-*Create a git repository in the directory where is our Flask App.
-*Login into our Heroku account.
-*Create a requirements.txt and Procfile.
-*Add all the files in the directory to the repository.
-Push the app to the web!
+* Create a Heroku account
+* Create a git repository in the directory where is our Flask App.
+* Login into our Heroku account.
+* Create a requirements.txt and Procfile.
+* Add all the files in the directory to the repository.
+* Push the app to the web!
